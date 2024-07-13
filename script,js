@@ -1,0 +1,10 @@
+import LocomotiveScroll from 'locomotive-scroll';
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
+document.getElementById("unique-hamburger").addEventListener("click", function() {
+    this.classList.toggle("active");
+    document.getElementById("unique-menu").classList.toggle("active");
+});
